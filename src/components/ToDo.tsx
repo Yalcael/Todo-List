@@ -7,10 +7,9 @@ interface ToDoProps {
    id:number
   };
 
-
 const ToDo = ({done, text, updateDone, id} : ToDoProps) => {
   return (
-    <li className={`text-2xl font-bold mt-3 ${done ? "text-green-400" : "text-red-400"}`} onClick={() => updateDone(id)}>{text}</li>
+    <li className={`text-2xl font-bold mt-3 ${done ? "text-green-400 line-through" : "text-red-400"}`} onClick={() => updateDone(id)}>{text}</li>
   )
 }
 
