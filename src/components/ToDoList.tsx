@@ -20,15 +20,15 @@ const ToDoList = () => {
         // const objIndex = newTodos.findIndex((obj => obj.id === id));
         // newTodos[objIndex].done = !newTodos[objIndex].done
         // setTodos(newTodos)
+        // for a lot of information
         setTodos(
             todos.map((todo:item) => {
-                if (todo.id === id) {
-                    todo.done = !todo.done
-                }
+                if (todo.id === id) todo.done = !todo.done
                 return todo
             }
             )
         )
+        //for a little bit of information
     };
 
     const handleAddTodo = (e: React.MouseEvent<HTMLElement>) => {
