@@ -21,7 +21,7 @@ const ToDoList = () => {
         // newTodos[objIndex].done = !newTodos[objIndex].done
         // setTodos(newTodos)
         setTodos(
-            todos.map((todo) => {
+            todos.map((todo:item) => {
                 if (todo.id === id) {
                     todo.done = !todo.done
                 }
